@@ -1,12 +1,10 @@
 import React from "react";
+import Home from "../components/Home";
 
-
-function Home(){
+function home(){
     return(
-        <div>
-            <h1>Homegfdfgdfgdfgdfgdgdgdg</h1>
-        </div>
+     <Home/>
     )
 }
 
-export default Home;
+export default home;
