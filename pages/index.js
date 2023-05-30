@@ -1,24 +1,25 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-
-
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>News letter</title>
+        <title>News Feed</title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"></link>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        ></link>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
       </Head>
-     
-      <main>
-        
-     INDEX PAGE
-        
-        </main>
 
-      <footer>footer</footer>
+      <main className="jumbotron">
+        Main Content
+        <button type='button' className="btn btn-success">Success</button>
+      </main>
+
+      <footer>Footer Content</footer>
 
       <style jsx>{`
         main {
