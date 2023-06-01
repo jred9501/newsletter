@@ -1,15 +1,26 @@
 import React from "react";
-// import Home from "../components/Home";
-import Layout from '../components/Layout';
+import Image from "next/image";
+import image from "../public/pic.jpg";
 
-function home(){
-    return(
-        <Layout>
-              <h2>Welcome to my website!</h2>
-      <p>This is the home page.</p>
-        </Layout>
+function home() {
+  return (
    
-    )
+    <div className="container">
+    <div className="name-box">
+      <Image src={image} className="header-img img img-responsive" alt="..."  />
+    </div>
+    <div className="main">
+      this is the main content
+    </div>
+    <div id="sidebar">
+
+     
+    </div>
+ 
+    <footer>Footer</footer>
+  </div>
+   
+  );
 }
 
 export default home;
