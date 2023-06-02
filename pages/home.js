@@ -4,8 +4,8 @@ import image from "../public/pic.jpg";
 
 function home() {
   return (
-    <div class="container">
-    <nav>Navbar</nav>
+    <div className="container">
+    <div className="home-page-header">divbar</div>
     <main>Main</main>
     <div id="sidebar">Sidebar</div>
     <div id="content1">Content1</div>
