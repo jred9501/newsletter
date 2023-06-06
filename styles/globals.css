@@ -151,15 +151,69 @@ header {
 
 
 /* Grid stuff */
-
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-page-header {
+  background-color: #f2f2f2;
+  height: 100px;
+}
+
+main {
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#sidebar {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+#content1,
+#content2,
+#content3 {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/* About Us page stuff */
+
+
+.container2 {
   display: grid;
-  height: 300vh;
+  height: 150vh;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
   grid-template-areas:
-    "nav nav nav nav"
+    "head head head head"
     "sidebar main main main"
     "sidebar content1 content2 content3"
     "sidebar footer footer footer";
@@ -171,19 +225,30 @@ header {
   text-align: center;
 }
 
-.home-page-header {
-  background: #a7ffeb;
-  grid-area: nav;
+.about-us-wrapper{
+  background: #1f2c29;
+  grid-area: head;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  height: 29em;
 }
 
-main {
+.about-us-wrapper h1{
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+
+.about-main {
   background: #84ffff;
   grid-area: main;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  
 }
 
 #sidebar {
