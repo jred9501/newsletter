@@ -34,7 +34,7 @@ export default function Home() {
         ))}
       </main>
 
-      <div id="sidebar">Sidebarr22</div>
+      <div id="sidebar">Sidebarr22jjjjjjjj</div>
       <div id="content1">Content1</div>
       <div id="content2">Content2</div>
       <div id="content3">Content3</div>
