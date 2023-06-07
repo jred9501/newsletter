@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
 import logo from "../public/logo2.png";
+import React, { useState } from "react";
 import NavItem from "./NavItem";
 
 const MENU_LIST = [
@@ -20,9 +20,7 @@ const Navbar = () => {
         <Image
           className="logo"
               src={ logo }
-              alt="My Image" 
-              // width={200} 
-              // height={200}
+              alt="Site Logo" 
             />
         </Link>
         <div

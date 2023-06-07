@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="container">
       <div className="home-page-header">
-        <h1>World Headlines</h1>
+        <h1>Headlines From Around The World</h1>
       </div>
       <main className="news-grid">
         {/* Your page content */}
@@ -40,7 +40,7 @@ export default function Home() {
 
             <h5>Source: {newsItem.source.name}</h5>
             <h3 className="source-link">
-              <a href={newsItem.url}>Read More</a>
+              <a href={newsItem.url}>View More</a>
             </h3>
             <p>{newsItem.description}</p>
 
@@ -49,10 +49,6 @@ export default function Home() {
         ))}
       </main>
 
-      {/* <div id="sidebar">Sidebar</div>
-      <div id="content1">Content1</div>
-      <div id="content2">Content2</div>
-      <div id="content3">Content3</div> */}
       <div className="footer">&copy; 2023 News Feed</div>
 
       <style jsx>{`
