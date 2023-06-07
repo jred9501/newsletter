@@ -14,6 +14,7 @@ export default function Home() {
       );
       const data = await response.json();
       setNewsData(data.articles);
+      console.log(data.articles, data.url);
     } catch (error) {
       console.log("Error fetching news:", error);
     }
@@ -21,24 +22,51 @@ export default function Home() {
 
   return (
     <div className="container">
-      <div className="home-page-header"></div>
-      <main>
+      <div className="home-page-header">
+        <h1>World Headlines</h1>
+      </div>
+      <main className="news-grid">
         {/* Your page content */}
         {newsData.map((newsItem, index) => (
-          <div key={index}>
+          <div className="news-field" key={index}>
+            <img
+              src={newsItem.urlToImage}
+              alt={newsItem.title}
+              href={newsItem.url}
+            />
             <h3>{newsItem.title}</h3>
+            <h4>Author: {newsItem.author}</h4>
+            <h5>Published on: {newsItem.publishedAt}</h5>
+
+            <h5>Source: {newsItem.source.name}</h5>
+            <h3 className="source-link">
+              <a href={newsItem.url}>Read More</a>
+            </h3>
             <p>{newsItem.description}</p>
-            <img src={newsItem.image} alt={newsItem.title} />
+
             {/* Render other news data fields */}
           </div>
         ))}
       </main>
 
-      <div id="sidebar">Sidebarr22jjjjjjjj</div>
+      {/* <div id="sidebar">Sidebar</div>
       <div id="content1">Content1</div>
       <div id="content2">Content2</div>
-      <div id="content3">Content3</div>
-      <footer>Footer</footer>
+      <div id="content3">Content3</div> */}
+      <div className="footer">&copy; 2023 News Feed</div>
+
+      <style jsx>{`
+        .news-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 20px;
+        }
+
+        .news-item {
+          border: 1px solid #ddd;
+          padding: 20px;
+        }
+      `}</style>
     </div>
   );
 }

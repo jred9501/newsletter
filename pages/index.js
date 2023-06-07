@@ -12,7 +12,7 @@ export default function Home() {
    <Image src={image} className="header-img img img-responsive" alt="..."  />
     </div>
 
-      <footer>Footer Content</footer>
+      <footer>&copy; 2023 News Feed</footer>
 
       <style jsx>{`
         main {

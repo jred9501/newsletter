@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import Logo from "./Logo";
+import logo from "../public/logo2.png";
 import NavItem from "./NavItem";
 
 const MENU_LIST = [
@@ -17,7 +17,13 @@ const Navbar = () => {
     <header>
       <nav className={`nav1`}>
         <Link href={"/"}>
-          <h1 className="logo">News Feed</h1>
+        <Image
+          className="logo"
+              src={ logo }
+              alt="My Image" 
+              // width={200} 
+              // height={200}
+            />
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}

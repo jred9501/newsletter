@@ -39,11 +39,8 @@ function About() {
         journalism meets the beating pulse of a world hungry for change.
         </p>
       </div>
-      <div id="sidebar">Sidebar</div>
-      <div id="content1">Content1</div>
-      <div id="content2">Content2</div>
-      <div id="content3">Content3</div>
-      <footer>Footer</footer>
+    
+      <footer>&copy; 2023 News Feed</footer>
     </div>
   );
 }
